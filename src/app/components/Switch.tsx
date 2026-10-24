@@ -1,4 +1,6 @@
 
+import Image from "next/image";
+
 export default function Switch() {
   return (
     <div className="switch-wrapper">
@@ -6,15 +8,14 @@ export default function Switch() {
         <div className="body">
           <div className="volume" />
           <div className="screen">
-            <div className="logo">
-              <div className="icon">
-                <div className="icon-part left" />
-                <div className="icon-part right" />
-              </div>
-              <h1>
-                <img src={'/HeroBanner.png'} className="select-none" ></img>    
-              </h1>
-            </div>
+            <Image
+              src="/HeroBanner.png"
+              alt=""
+              width={2555}
+              height={1439}
+              className="select-none"
+              priority
+            />
           </div>
         </div>
 

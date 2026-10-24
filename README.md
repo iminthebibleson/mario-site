@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NSMBU Deluxe Modding Community
 
-## Getting Started
+The community website for New Super Mario Bros. U Deluxe modding and Steam's New Super Mario Bros. Deluxe project. It highlights the mod, links to community tools, and introduces the creator resources and game research being developed for the community.
 
-First, run the development server:
+## Project links
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **This website's source:** [mario-site repository](https://github.com/iminthebibleson/mario-site)
+- **Yaz0moto:** [level editor repository](https://github.com/Steammaker212/Yaz0moto)
+- **SweetDX:** [custom-code compiler repository](https://github.com/jabonchan/sweet-dx)
+- **Miraheze:** [wiki request page](https://meta.miraheze.org/wiki/Special:RequestWiki)
+- **Downloads and installation:** served on the website at `/downloads/` (current build: vBeta0.50a)
+- **Discord:** [Steam's NSMBU DX Server](https://discord.gg/YVtNsKzYTg) (invite code `YVtNsKzYTg`)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Miraheze scope, request draft, and starter-page outline are in the [Miraheze setup draft](docs/miraheze-wiki-plan.md). The wiki is planned; its URL will be added after Miraheze approves the request.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies with npm ci, then start the development server with npm run dev. Open http://localhost:3000 to view the site.
 
-## Learn More
+Use npm run build to create a production build, or npm run lint to run ESLint.
 
-To learn more about Next.js, take a look at the following resources:
+## Fan project notice
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is an unofficial community project and is not affiliated with Nintendo. New Super Mario Bros. U Deluxe and related characters and assets belong to their respective owners. This repository does not provide game files; use your own legally obtained game copy where applicable.
