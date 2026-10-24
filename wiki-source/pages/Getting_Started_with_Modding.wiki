@@ -1,0 +1,29 @@
+This page is an orientation to the community's modding resources. Tool requirements and game-version compatibility can change, so follow the documentation maintained by each tool's authors.
+
+== Before you begin ==
+
+* Use a copy of ''New Super Mario Bros. U Deluxe'' that you obtained legally. This wiki does not provide game files.
+* Read the current requirements and setup information from each tool's upstream repository before using it.
+* Keep an untouched backup of your own files and follow the instructions for your specific tool and game version.
+* Treat community findings as version-specific unless a source says otherwise.
+
+== Choose a path ==
+
+; I want to make a level
+: Start with [[Yaz0moto]], then see [[Level Design]].
+; I want to explore custom code
+: Read about [[SweetDX]] and review its repository for current requirements.
+; I want to play the featured community project
+: Visit [[Steam's New Super Mario Bros. Deluxe]] for project links and release details. Verify the current version before installing.
+; I want to investigate how the game works
+: See [[Game Research]] for source and confidence guidelines.
+
+== Ask for help ==
+
+For tool-specific support, use the issue tracker or documentation linked from the tool's upstream repository. For project announcements and community discussion, use the [https://discord.gg/YVtNsKzYTg community Discord]. Do not post private account, console, or personal information in public help requests.
+
+== Contribute ==
+
+You can improve this wiki by correcting outdated information, adding sourced notes, or documenting a reproducible workflow. See [[Contributing]] and [[Community Guidelines]].
+
+[[Category:Community resources]]

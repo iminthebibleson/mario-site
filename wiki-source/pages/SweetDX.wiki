@@ -1,0 +1,24 @@
+{{Resource infobox
+|name=SweetDX
+|type=Custom-code compiler
+|summary=A compiler built for custom-code work with New Super Mario Bros. U Deluxe.
+|repository=https://github.com/jabonchan/sweet-dx
+}}
+
+SweetDX is a custom-code compiler associated with the New Super Mario Bros. U Deluxe modding community. The project website reports successful testing on Switch hardware and emulators. That report does not guarantee compatibility with every game, tool, or emulator version.
+
+== Documentation and setup ==
+
+Consult the [https://github.com/jabonchan/sweet-dx upstream repository] for source code, supported workflows, current requirements, and setup instructions. This wiki does not replace the maintainers' documentation.
+
+== Reporting a result ==
+
+When documenting a build or test, record the tool version or commit, game version, hardware or emulator and version, relevant configuration, and the exact result. Separate a successful test from a general compatibility claim.
+
+== Related pages ==
+
+* [[Getting Started with Modding]]
+* [[Game Research]]
+* [[Steam's New Super Mario Bros. Deluxe]]
+
+[[Category:Tools]]

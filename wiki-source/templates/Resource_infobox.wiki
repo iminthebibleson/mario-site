@@ -1,0 +1,18 @@
+<div class="nsmbudx-toolbox">
+<div class="nsmbudx-toolbox-heading">{{{name|Resource}}}</div>
+<div class="nsmbudx-toolbox-type">{{{type|Community resource}}}</div>
+<p>{{{summary|See the page overview below.}}}</p>
+<div class="nsmbudx-toolbox-link">[{{{repository|https://www.mediawiki.org/}}} Open source or project page]</div>
+</div>
+<noinclude>
+Use this template near the top of a tool or project page.
+
+<pre><nowiki>
+{{Resource infobox
+|name=Resource name
+|type=Tool or project
+|summary=Short, sourced description.
+|repository=https://example.org/project
+}}
+</nowiki></pre>
+</noinclude>

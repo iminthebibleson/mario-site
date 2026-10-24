@@ -1,0 +1,579 @@
+/* NSMBU Deluxe Modding wiki theme. Brand palette matches the main site. */
+:root {
+  color-scheme: dark;
+  --nsmb-paper: #17161a;
+  --nsmb-paper-raised: #232228;
+  --nsmb-ink: #f1eee9;
+  --nsmb-muted: #b5b2ad;
+  --nsmb-green: #202b2c;
+  --nsmb-green-light: #2b3c3e;
+  --nsmb-red: #c94a43;
+  --nsmb-gold: #d6b86d;
+  --nsmb-blue: #78b9c5;
+  --nsmb-line: rgba(242, 238, 232, 0.14);
+  --nsmb-display: "Mario", "Arial Black", Impact, "Trebuchet MS", sans-serif;
+}
+
+html {
+  min-height: 100%;
+  background: var(--nsmb-paper);
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(201, 74, 67, 0.2), transparent 42rem),
+    radial-gradient(ellipse at 88% 28%, rgba(120, 185, 197, 0.07), transparent 40rem),
+    linear-gradient(180deg, #1d1115 0%, var(--nsmb-paper) 42%, #17161a 100%) !important;
+  color: var(--nsmb-ink) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+
+/* Keep MediaWiki's navigation usable while letting the branded page backdrop show through. */
+#mw-page-base,
+.mw-page-container,
+.mw-page-container-inner,
+#content,
+.mw-content-container,
+.mw-body-content {
+  background-color: transparent !important;
+  color: var(--nsmb-ink);
+}
+
+.mw-body {
+  box-sizing: border-box;
+  padding: clamp(1rem, 2.4vw, 2rem);
+  border: 1px solid rgba(242, 238, 232, 0.1);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(35, 34, 40, 0.94), rgba(23, 22, 26, 0.88)) !important;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+  color: var(--nsmb-ink);
+}
+
+.mw-body-content,
+.mw-body-content p,
+.mw-body-content li,
+.mw-body-content dd {
+  color: #d2d0ca;
+}
+
+.mw-body-content p {
+  line-height: 1.75;
+}
+
+#firstHeading,
+.firstHeading,
+.mw-body-content h1,
+.mw-body-content h2,
+.mw-body-content h3,
+.mw-body-content h4 {
+  color: var(--nsmb-ink) !important;
+  font-family: var(--nsmb-display);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+}
+
+#firstHeading,
+.firstHeading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.mw-body-content h2 {
+  margin: 1.65em 0 0.7em;
+  padding-bottom: 0.45em;
+  border-bottom: 1px solid var(--nsmb-line);
+  background: linear-gradient(90deg, var(--nsmb-red), var(--nsmb-gold), transparent) left bottom / min(9rem, 45%) 3px no-repeat;
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  line-height: 1.12;
+}
+
+.mw-body-content h3 {
+  margin: 1.35em 0 0.55em;
+  color: var(--nsmb-gold) !important;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.mw-body-content a,
+.mw-body-content a:visited {
+  color: var(--nsmb-gold) !important;
+  text-decoration-color: rgba(214, 184, 109, 0.45);
+  text-underline-offset: 0.18em;
+}
+
+.mw-body-content a:hover,
+.mw-body-content a:focus-visible {
+  color: #fffaf0 !important;
+  text-decoration-color: var(--nsmb-red);
+}
+
+.mw-body-content a.new {
+  color: #f07169 !important;
+}
+
+.mw-body-content ul,
+.mw-body-content ol {
+  padding-left: 1.5em;
+}
+
+.mw-body-content ul {
+  list-style: disc;
+}
+
+.mw-body-content ol {
+  list-style: decimal;
+}
+
+.mw-body-content li {
+  margin: 0.28em 0;
+}
+
+.mw-body-content table.wikitable {
+  border: 1px solid var(--nsmb-line);
+  background: rgba(35, 34, 40, 0.9);
+  color: var(--nsmb-ink);
+}
+
+.mw-body-content table.wikitable th {
+  background: var(--nsmb-green);
+  color: var(--nsmb-gold);
+}
+
+.mw-body-content table.wikitable td,
+.mw-body-content table.wikitable th {
+  border-color: var(--nsmb-line);
+  padding: 0.6em 0.8em;
+}
+
+/* Vector skins: bring the wiki chrome into the same charcoal-and-green palette. */
+.vector-header-container,
+.vector-page-toolbar-container,
+.mw-header,
+#mw-head {
+  border-color: var(--nsmb-line) !important;
+  background: rgba(23, 22, 26, 0.92) !important;
+}
+
+.vector-menu-heading,
+.vector-toc .vector-toc-heading,
+.mw-portlet h3,
+.mw-portlet .vector-menu-heading {
+  color: var(--nsmb-gold) !important;
+  font-family: var(--nsmb-display);
+  letter-spacing: 0.035em;
+}
+
+.vector-menu-content,
+.vector-toc,
+.vector-sidebar-container,
+.mw-portlet,
+#mw-panel {
+  color: #d2d0ca;
+}
+
+.vector-menu-content a,
+.vector-toc a,
+.vector-sidebar-container a,
+#mw-panel a {
+  color: #c9c6c0 !important;
+}
+
+.vector-menu-content a:hover,
+.vector-toc a:hover,
+.vector-sidebar-container a:hover,
+#mw-panel a:hover {
+  color: var(--nsmb-gold) !important;
+}
+
+body.page-Main_Page #firstHeading,
+body.page-Main_Page .firstHeading,
+body.page-Main_Page .vector-toc,
+body.page-Main_Page #toc {
+  display: none;
+}
+
+/* Main page hero */
+.nsmbudx-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1.5em;
+  padding: clamp(1.4rem, 4vw, 2.7rem);
+  border: 1px solid rgba(120, 185, 197, 0.18);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 92% 0%, rgba(201, 74, 67, 0.24), transparent 48%),
+    linear-gradient(135deg, #202b2c 0%, #1d2426 52%, #232228 100%);
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.24);
+  color: var(--nsmb-ink);
+}
+
+.nsmbudx-hero::before,
+.nsmbudx-feature::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--nsmb-red), var(--nsmb-gold) 58%, transparent);
+  content: "";
+}
+
+.nsmbudx-hero > *,
+.nsmbudx-feature > * {
+  position: relative;
+}
+
+.nsmbudx-hero-brand {
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  margin-bottom: 1.2em;
+}
+
+.nsmbudx-hero-brand img {
+  display: block;
+  width: clamp(3.4rem, 8vw, 5rem);
+  height: clamp(3.4rem, 8vw, 5rem);
+  object-fit: contain;
+  filter: drop-shadow(0 7px 18px rgba(214, 184, 109, 0.26));
+}
+
+.nsmbudx-hero a,
+.nsmbudx-card a,
+.nsmbudx-toolbox a {
+  color: var(--nsmb-gold) !important;
+}
+
+.nsmbudx-kicker,
+.nsmbudx-card-label {
+  margin-bottom: 0.55em;
+  color: var(--nsmb-red);
+  font-family: var(--nsmb-display);
+  font-size: 0.78em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nsmbudx-lead {
+  max-width: 13ch;
+  margin-bottom: 0.32em;
+  color: #fffaf0;
+  font-family: var(--nsmb-display);
+  font-size: clamp(2.35rem, 6vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.nsmbudx-hero > p,
+.nsmbudx-hero {
+  font-size: 1.03rem;
+}
+
+.nsmbudx-hero > p {
+  max-width: 66ch;
+  color: #d2d0ca;
+}
+
+/* Four entry cards echo the main site's tool cards. */
+.nsmbudx-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.35em 0 2em;
+}
+
+.nsmbudx-card {
+  min-height: 9rem;
+  padding: 1.2em;
+  border: 1px solid rgba(242, 238, 232, 0.11);
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(120, 185, 197, 0.1), transparent 48%),
+    #25242a;
+  color: var(--nsmb-ink);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease;
+}
+
+.nsmbudx-card:nth-child(2n) {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(214, 184, 109, 0.1), transparent 48%),
+    #25242a;
+}
+
+.nsmbudx-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 184, 109, 0.38);
+}
+
+.nsmbudx-card a,
+.nsmbudx-toolbox a {
+  font-weight: 750;
+}
+
+.nsmbudx-card-label {
+  color: var(--nsmb-gold);
+}
+
+/* Tool infobox */
+.nsmbudx-toolbox {
+  box-sizing: border-box;
+  float: right;
+  width: min(100%, 21em);
+  margin: 0 0 1em 1.25em;
+  padding: 1.15em;
+  border: 1px solid rgba(120, 185, 197, 0.2);
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(120, 185, 197, 0.1), transparent 55%),
+    var(--nsmb-green);
+  color: var(--nsmb-ink);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.nsmbudx-toolbox-heading {
+  color: #fffaf0;
+  font-family: var(--nsmb-display);
+  font-size: 1.35em;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.nsmbudx-toolbox-type {
+  margin-top: 0.55em;
+  color: var(--nsmb-gold);
+  font-family: var(--nsmb-display);
+  font-size: 0.8em;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.nsmbudx-toolbox p {
+  margin: 0.9em 0;
+}
+
+.nsmbudx-toolbox-link {
+  padding-top: 0.7em;
+  border-top: 1px solid rgba(242, 238, 232, 0.15);
+}
+
+/* Flagship project panel */
+.nsmbudx-feature {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(15em, 0.88fr);
+  align-items: center;
+  gap: clamp(1.3rem, 3vw, 2.2rem);
+  overflow: hidden;
+  margin: 1.25em 0;
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border: 1px solid rgba(120, 185, 197, 0.2);
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 86% 50%, rgba(112, 149, 93, 0.22), transparent 38%),
+    linear-gradient(125deg, #202b2c, #1d2426 72%);
+  color: var(--nsmb-ink);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+}
+
+.nsmbudx-feature-copy,
+.nsmbudx-feature-art {
+  min-width: 0;
+}
+
+.nsmbudx-feature-title {
+  max-width: 13ch;
+  margin: 0.45em 0 0.35em;
+  color: #fffaf0;
+  font-family: var(--nsmb-display);
+  font-size: clamp(1.8em, 4vw, 2.7em);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.nsmbudx-feature-title a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.nsmbudx-feature-title a:hover {
+  color: var(--nsmb-gold) !important;
+}
+
+.nsmbudx-feature-badges,
+.nsmbudx-feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+}
+
+.nsmbudx-feature-badge {
+  padding: 0.4em 0.75em;
+  border: 1px solid rgba(242, 238, 232, 0.22);
+  border-radius: 5px;
+  color: #e6dfcf;
+  font-size: 0.7em;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nsmbudx-feature-badge:first-child {
+  border-color: transparent;
+  background: var(--nsmb-gold);
+  color: #28251e;
+}
+
+.nsmbudx-feature-copy p {
+  max-width: 58ch;
+  color: #d2d0ca;
+}
+
+.nsmbudx-feature-links {
+  margin-top: 1.25em;
+}
+
+.nsmbudx-feature-links a {
+  padding: 0.7em 0.9em;
+  border: 1px solid rgba(214, 184, 109, 0.3);
+  border-radius: 8px;
+  background: rgba(214, 184, 109, 0.08);
+  color: var(--nsmb-gold) !important;
+  font-size: 0.82em;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 150ms ease, background-color 150ms ease;
+}
+
+.nsmbudx-feature-links a:first-child {
+  border-color: transparent;
+  background: var(--nsmb-red);
+  color: #fffaf0 !important;
+}
+
+.nsmbudx-feature-links a:hover {
+  transform: translateY(-2px);
+  background-color: rgba(214, 184, 109, 0.18);
+}
+
+.nsmbudx-feature-links a:first-child:hover {
+  background: #d45b53;
+}
+
+.nsmbudx-feature-art {
+  display: grid;
+  justify-items: center;
+  gap: 0.8em;
+}
+
+.nsmbudx-feature-art img {
+  display: block;
+  width: 100%;
+  max-width: 28em;
+  height: auto;
+  filter: drop-shadow(0 18px 26px rgba(0, 0, 0, 0.38));
+}
+
+.nsmbudx-feature-release {
+  color: #bdcbbf;
+  font-family: var(--nsmb-display);
+  font-size: 0.74em;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 720px) {
+  .mw-body {
+    padding: 1rem;
+    border-radius: 13px;
+  }
+
+  .nsmbudx-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nsmbudx-toolbox {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.2em;
+  }
+
+  .nsmbudx-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .nsmbudx-feature-art {
+    grid-row: 1;
+  }
+
+  .nsmbudx-feature-art img {
+    max-width: 25em;
+  }
+
+  .nsmbudx-feature-title {
+    max-width: 18ch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nsmbudx-card,
+  .nsmbudx-feature-links a {
+    transition: none;
+  }
+}
+/* Slow, layered red glow inspired by the main site's animated backdrop. */
+body {
+  position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: -18rem;
+  background:
+    radial-gradient(ellipse at 18% 26%, rgba(201, 74, 67, 0.43), transparent 35%),
+    radial-gradient(ellipse at 76% 16%, rgba(201, 74, 67, 0.28), transparent 39%),
+    radial-gradient(ellipse at 64% 76%, rgba(145, 45, 53, 0.25), transparent 43%);
+  filter: blur(22px);
+  opacity: 0.85;
+  pointer-events: none;
+  content: "";
+  animation: nsmbudx-red-drift 26s ease-in-out infinite alternate;
+}
+
+body::after {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 12, 15, 0.18), rgba(23, 22, 26, 0.68));
+  pointer-events: none;
+  content: "";
+}
+
+@keyframes nsmbudx-red-drift {
+  0% {
+    transform: translate3d(-2.5%, -1%, 0) scale(0.96);
+  }
+
+  50% {
+    transform: translate3d(2%, 1.5%, 0) scale(1.03);
+  }
+
+  100% {
+    transform: translate3d(4%, -1%, 0) scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}

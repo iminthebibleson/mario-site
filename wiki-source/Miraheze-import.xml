@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.11/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="0.11" xml:lang="en" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.11/ https://www.mediawiki.org/xml/export-0.11.xsd"><siteinfo><sitename>Steam's New Super Mario Bros. Deluxe Wiki</sitename><base>https://nsmbudxmodding.miraheze.org/wiki/Main_Page</base><generator>MediaWiki</generator><case>first-letter</case><namespaces><namespace key="-2" case="first-letter">Media</namespace><namespace key="-1" case="first-letter">Special</namespace><namespace key="0" case="first-letter" /><namespace key="1" case="first-letter">Talk</namespace><namespace key="2" case="first-letter">User</namespace><namespace key="3" case="first-letter">User talk</namespace><namespace key="4" case="first-letter">Project</namespace><namespace key="5" case="first-letter">Project talk</namespace><namespace key="6" case="first-letter">File</namespace><namespace key="7" case="first-letter">File talk</namespace><namespace key="8" case="first-letter">MediaWiki</namespace><namespace key="9" case="first-letter">MediaWiki talk</namespace><namespace key="10" case="first-letter">Template</namespace><namespace key="11" case="first-letter">Template talk</namespace><namespace key="12" case="first-letter">Help</namespace><namespace key="13" case="first-letter">Help talk</namespace><namespace key="14" case="first-letter">Category</namespace><namespace key="15" case="first-letter">Category talk</namespace></namespaces></siteinfo><page><title>Main Page</title><ns>0</ns><id>1</id><revision><id>1</id><timestamp>2026-10-24T20:51:00Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>1</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">&lt;div class="nsmbudx-hero"&gt;
+&lt;div class="nsmbudx-hero-brand"&gt;
+[[File:SteamLogo.png|frameless|52px|link=Main Page|alt=Steam's logo]]
+&lt;div&gt;
+&lt;div class="nsmbudx-kicker"&gt;COMMUNITY KNOWLEDGE BASE&lt;/div&gt;
+&lt;div class="nsmbudx-lead"&gt;'''Make room for what's next.'''&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+This is a community-maintained guide to modding ''New Super Mario Bros. U Deluxe'', its creator tools, and Steam's ''New Super Mario Bros. Deluxe'' project.
+&lt;/div&gt;
+
+&lt;div class="nsmbudx-card-grid"&gt;
+&lt;div class="nsmbudx-card"&gt;
+&lt;div class="nsmbudx-card-label"&gt;START HERE&lt;/div&gt;
+'''[[Getting Started with Modding|Getting started]]'''&lt;br /&gt;Find an orientation to the tools, project resources, and responsible modding practices.
+&lt;/div&gt;
+&lt;div class="nsmbudx-card"&gt;
+&lt;div class="nsmbudx-card-label"&gt;CREATION TOOLS&lt;/div&gt;
+'''[[Yaz0moto|Yaz0moto]]''' · '''[[SweetDX|SweetDX]]'''&lt;br /&gt;Explore the community level editor and custom-code compiler through their upstream documentation.
+&lt;/div&gt;
+&lt;div class="nsmbudx-card"&gt;
+&lt;div class="nsmbudx-card-label"&gt;PROJECT&lt;/div&gt;
+'''[[Steam's New Super Mario Bros. Deluxe|The flagship mod]]'''&lt;br /&gt;Read about the project, its release notes, and where to find its official updates.
+&lt;/div&gt;
+&lt;div class="nsmbudx-card"&gt;
+&lt;div class="nsmbudx-card-label"&gt;LEARN TOGETHER&lt;/div&gt;
+'''[[Level Design|Level design]]''' · '''[[Game Research|Game research]]'''&lt;br /&gt;Share sourced observations and creator knowledge with the community.
+&lt;/div&gt;
+&lt;/div&gt;
+
+== Featured project ==
+
+&lt;div class="nsmbudx-feature"&gt;
+&lt;div class="nsmbudx-feature-copy"&gt;
+&lt;div class="nsmbudx-feature-badges"&gt;&lt;span class="nsmbudx-feature-badge"&gt;Flagship project&lt;/span&gt;&lt;span class="nsmbudx-feature-badge"&gt;In active development&lt;/span&gt;&lt;/div&gt;
+&lt;div class="nsmbudx-feature-title"&gt;[[Steam's New Super Mario Bros. Deluxe|Steam's New Super Mario Bros. Deluxe]]&lt;/div&gt;
+&lt;p&gt;A community mod project exploring original ideas for ''New Super Mario Bros. U Deluxe''. Follow development as the team builds new content, tests ideas, and expands what creators can do with the game.&lt;/p&gt;
+&lt;div class="nsmbudx-feature-links"&gt;[https://www.mediafire.com/file/xj7gg9jjtguc4a2/Steam_New_Super_Mario_Bro_U_DX_Mod_5_Levels.zip/file Get vBeta0.50a ↗] [https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642 Project updates ↗] [https://discord.gg/YVtNsKzYTg Join the community ↗]&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="nsmbudx-feature-art"&gt;[[File:SteamProjectBanner.png|frameless|alt=Steam's New Super Mario Bros. Deluxe project logo|link=Steam's New Super Mario Bros. Deluxe]]&lt;div class="nsmbudx-feature-release"&gt;vBeta0.50a · 5 levels&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+== About this wiki ==
+
+This is an unofficial, fan-maintained resource. It is not affiliated with Nintendo. The wiki documents community-created tools and research; it does not host the base game or Nintendo-owned game files. See [[Community Guidelines]] before contributing.
+
+[[Category:Community resources]]
+</text><sha1>rst6pcwihf7all39pokngmc5ij24lgj</sha1></revision></page><page><title>Getting Started with Modding</title><ns>0</ns><id>2</id><revision><id>2</id><timestamp>2026-10-24T20:51:01Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>2</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">This page is an orientation to the community's modding resources. Tool requirements and game-version compatibility can change, so follow the documentation maintained by each tool's authors.
+
+== Before you begin ==
+
+* Use a copy of ''New Super Mario Bros. U Deluxe'' that you obtained legally. This wiki does not provide game files.
+* Read the current requirements and setup information from each tool's upstream repository before using it.
+* Keep an untouched backup of your own files and follow the instructions for your specific tool and game version.
+* Treat community findings as version-specific unless a source says otherwise.
+
+== Choose a path ==
+
+; I want to make a level
+: Start with [[Yaz0moto]], then see [[Level Design]].
+; I want to explore custom code
+: Read about [[SweetDX]] and review its repository for current requirements.
+; I want to play the featured community project
+: Visit [[Steam's New Super Mario Bros. Deluxe]] for project links and release details. Verify the current version before installing.
+; I want to investigate how the game works
+: See [[Game Research]] for source and confidence guidelines.
+
+== Ask for help ==
+
+For tool-specific support, use the issue tracker or documentation linked from the tool's upstream repository. For project announcements and community discussion, use the [https://discord.gg/YVtNsKzYTg community Discord]. Do not post private account, console, or personal information in public help requests.
+
+== Contribute ==
+
+You can improve this wiki by correcting outdated information, adding sourced notes, or documenting a reproducible workflow. See [[Contributing]] and [[Community Guidelines]].
+
+[[Category:Community resources]]
+</text><sha1>h71bkdixlrovb3eg2h9t3y9lh9rsahi</sha1></revision></page><page><title>Steam's New Super Mario Bros. Deluxe</title><ns>0</ns><id>3</id><revision><id>3</id><timestamp>2026-10-24T20:51:02Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>3</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">'''Steam's New Super Mario Bros. Deluxe''' is a community mod project for ''New Super Mario Bros. U Deluxe''. The project website describes ongoing work on new content, testing, and creator resources.
+
+{{Resource infobox
+|name=Steam's New Super Mario Bros. Deluxe
+|type=Community mod project
+|summary=An independent fan project for New Super Mario Bros. U Deluxe.
+|repository=https://github.com/iminthebibleson/mario-site
+}}
+
+== Current project links ==
+
+* [https://www.mediafire.com/file/xj7gg9jjtguc4a2/Steam_New_Super_Mario_Bro_U_DX_Mod_5_Levels.zip/file Download listed on the project website]
+* [https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642 Project update post]
+* [https://discord.gg/YVtNsKzYTg Community Discord]
+* [https://github.com/iminthebibleson/mario-site Website source repository]
+
+== Release information ==
+
+At the time this wiki source was prepared, the project website listed '''vBeta0.50a''' with '''five levels'''. Confirm the current build, included content, and installation notes on the project website before publishing or relying on this information.
+
+The download is a mod patch, not the base game. Use your own legally obtained game copy and follow the current installation instructions provided with the project release.
+
+== Tools and community resources ==
+
+The project highlights [[Yaz0moto]] for level editing and [[SweetDX]] for custom-code compilation. See those pages for upstream links; their maintainers' documentation is the source of truth for requirements and setup.
+
+== Scope and affiliation ==
+
+This is an independent fan project and is not affiliated with Nintendo. Names and trademarks for the game and its characters belong to their respective owners. This wiki does not distribute the base game or Nintendo-owned game files.
+
+[[Category:Modding projects]]
+</text><sha1>9u4esfvfpq41rvy0qa6n6we0nadc3xz</sha1></revision></page><page><title>Yaz0moto</title><ns>0</ns><id>4</id><revision><id>4</id><timestamp>2026-10-24T20:51:03Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>4</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">{{Resource infobox
+|name=Yaz0moto
+|type=Level editor
+|summary=A level editor for building and shaping custom New Super Mario Bros. U Deluxe stages.
+|repository=https://github.com/Steammaker212/Yaz0moto
+}}
+
+Yaz0moto is a community level editor associated with Steam's ''New Super Mario Bros. Deluxe'' modding project. The project website describes it as a tool for building and shaping custom stages.
+
+== What it is used for ==
+
+The project presents Yaz0moto as a way to explore level layouts and develop original course ideas. For supported features, requirements, setup, and current compatibility, consult the [https://github.com/Steammaker212/Yaz0moto upstream repository] and its documentation.
+
+== Getting help ==
+
+Use the repository's issue tracker and documentation for tool-specific help. If you add community tips to this page, include the tool version, the game version, steps to reproduce, and a source where possible.
+
+== Related pages ==
+
+* [[Getting Started with Modding]]
+* [[Level Design]]
+* [[Steam's New Super Mario Bros. Deluxe]]
+
+[[Category:Tools]]
+</text><sha1>69vetzsgkn13h3vn5ui26ha78i4zkx6</sha1></revision></page><page><title>SweetDX</title><ns>0</ns><id>5</id><revision><id>5</id><timestamp>2026-10-24T20:51:04Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>5</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">{{Resource infobox
+|name=SweetDX
+|type=Custom-code compiler
+|summary=A compiler built for custom-code work with New Super Mario Bros. U Deluxe.
+|repository=https://github.com/jabonchan/sweet-dx
+}}
+
+SweetDX is a custom-code compiler associated with the New Super Mario Bros. U Deluxe modding community. The project website reports successful testing on Switch hardware and emulators. That report does not guarantee compatibility with every game, tool, or emulator version.
+
+== Documentation and setup ==
+
+Consult the [https://github.com/jabonchan/sweet-dx upstream repository] for source code, supported workflows, current requirements, and setup instructions. This wiki does not replace the maintainers' documentation.
+
+== Reporting a result ==
+
+When documenting a build or test, record the tool version or commit, game version, hardware or emulator and version, relevant configuration, and the exact result. Separate a successful test from a general compatibility claim.
+
+== Related pages ==
+
+* [[Getting Started with Modding]]
+* [[Game Research]]
+* [[Steam's New Super Mario Bros. Deluxe]]
+
+[[Category:Tools]]
+</text><sha1>rzxhvedd4kgvnxwcmks6kx0194m0y5e</sha1></revision></page><page><title>Level Design</title><ns>0</ns><id>6</id><revision><id>6</id><timestamp>2026-10-24T20:51:05Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>6</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Level-design notes on this wiki should help creators explain how a course works and how an idea can be tested or improved. Keep examples original or obtain permission from their creators before publishing them.
+
+== A useful level note ==
+
+When describing a course or design technique, include:
+
+* The intended player experience or central idea.
+* How the route introduces, develops, and concludes that idea.
+* Any assumptions about game version, editor, or custom assets.
+* A screenshot or diagram only when you have permission to share every included asset.
+* The creator's name and the requested attribution, if the creator has agreed to publication.
+
+== Creating custom stages ==
+
+The community project lists [[Yaz0moto]] as a level editor for building and shaping custom stages. Check its [https://github.com/Steammaker212/Yaz0moto repository] for current capabilities and instructions. This page does not claim support for features that are not documented by the tool's maintainers.
+
+== Sharing examples ==
+
+Before uploading an example, confirm that it contains no game files, unlicensed game assets, private information, or material copied from another creator without permission. Explain what the example demonstrates and how it was made.
+
+[[Category:Community resources]]
+</text><sha1>l3a9wadtwxovgzt7ya8h7au9zh1ruyl</sha1></revision></page><page><title>Game Research</title><ns>0</ns><id>7</id><revision><id>7</id><timestamp>2026-10-24T20:51:06Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>7</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">This page is the starting point for community research about game behavior, modding tools, and reverse-engineering discoveries. Record reproducible observations and make uncertainty clear.
+
+== Research-note format ==
+
+Use this outline when adding a finding:
+
+; Question
+: What specific behavior or mechanism are you investigating?
+; Game and tool versions
+: Record the game version, tool version or commit, hardware or emulator, and relevant settings.
+; Method
+: Describe the steps needed for another person to repeat the observation.
+; Observation
+: State only what the test showed. Keep interpretation separate from observed results.
+; Evidence
+: Link source code, documentation, logs, or original media that can be shared lawfully.
+; Confidence
+: Mark the result as '''confirmed''', '''under investigation''', or '''speculative''', and explain why.
+; Limitations
+: Note what was not tested and which versions or setups may differ.
+
+== Good research practice ==
+
+* Prefer multiple repeatable tests over a single observation.
+* Preserve enough detail for another researcher to reproduce the result.
+* Link to upstream sources and identify when they were accessed.
+* Correct or qualify a result when new evidence changes it.
+* Do not upload game dumps, executables, copyrighted game files, or personal data.
+
+== Related tools ==
+
+* [[Yaz0moto]]
+* [[SweetDX]]
+
+[[Category:Game research]]
+</text><sha1>4nz5uto6zfxnqcvl7k88appnypoa1st</sha1></revision></page><page><title>Contributing</title><ns>0</ns><id>8</id><revision><id>8</id><timestamp>2026-10-24T20:51:07Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>8</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Thanks for helping build a useful, accurate resource for the New Super Mario Bros. U Deluxe modding community.
+
+== Before editing ==
+
+* Check whether the topic already has a page.
+* Use the tool's upstream repository for current requirements and setup details.
+* Keep general modding information separate from claims about Steam's ''New Super Mario Bros. Deluxe'' project.
+* Do not publish private messages, personal information, or material you do not have permission to share.
+
+== Writing standards ==
+
+* State facts plainly and link to a source for technical claims.
+* Include relevant game, tool, and emulator versions.
+* Mark uncertain findings as under investigation or speculative.
+* Prefer short, task-focused sections and descriptive page titles.
+* Use headings in order and write useful alt text for images.
+* Explain when a page was last checked if its instructions can become outdated.
+
+== Images and files ==
+
+Upload only original work or files you have permission to publish. Do not upload the base game, extracted game assets, executables, or other Nintendo-owned files. Attribute creators according to their stated preferences.
+
+== Talk pages and corrections ==
+
+Use a page's talk page to discuss substantial changes or unclear claims. When correcting outdated information, link the new source and note the affected versions.
+
+See [[Community Guidelines]] for the wiki's scope and sharing rules.
+
+[[Category:Community resources]]
+</text><sha1>ryl60xssrd1y0p4pbaq49ae9x4tg4iy</sha1></revision></page><page><title>Community Guidelines</title><ns>0</ns><id>9</id><revision><id>9</id><timestamp>2026-10-24T20:51:08Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>9</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">This wiki is a public, community-maintained reference for modding ''New Super Mario Bros. U Deluxe'', its creator tools, community research, and the Steam's ''New Super Mario Bros. Deluxe'' project.
+
+== Scope ==
+
+Keep project-specific information clearly identified. Link to the maintainers' documentation rather than copying tool releases or unverified setup instructions. Document research with enough detail for others to understand its source and limitations.
+
+== Respect rights and privacy ==
+
+* Do not upload or link to unauthorized copies of the base game, game dumps, executables, or extracted Nintendo-owned files.
+* Share only original work or material you have permission to publish.
+* Attribute creator-submitted work as requested by its creator.
+* Do not publish personal information or private conversations without consent.
+* Do not present this wiki or the featured project as affiliated with or endorsed by Nintendo.
+
+== Accuracy and conduct ==
+
+* Cite sources for technical claims and include relevant version details.
+* Clearly label hypotheses, incomplete tests, and community reports.
+* Correct mistakes constructively and discuss disputed changes on talk pages.
+* Keep discussions focused on the subject and treat contributors respectfully.
+
+== Fan-project notice ==
+
+This is an unofficial fan resource. ''New Super Mario Bros. U Deluxe'' and related characters, names, and assets belong to their respective owners. The wiki does not host the base game; readers are responsible for using their own legally obtained game copy where applicable.
+
+[[Category:Community resources]]
+</text><sha1>0i8vfpa3ok1zan76lo3ni0ekm44atm2</sha1></revision></page><page><title>Category:Tools</title><ns>14</ns><id>10</id><revision><id>10</id><timestamp>2026-10-24T20:51:09Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>10</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Community tools for creating, testing, and documenting New Super Mario Bros. U Deluxe mods.
+</text><sha1>68rbswffyykwdop8g77ml3zs9g6gxpd</sha1></revision></page><page><title>Category:Community resources</title><ns>14</ns><id>11</id><revision><id>11</id><timestamp>2026-10-24T20:51:10Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>11</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Guides and shared resources maintained by the New Super Mario Bros. U Deluxe modding community.
+</text><sha1>3e539l59kfdneqkeiz7mcfzn78zrzkt</sha1></revision></page><page><title>Category:Game research</title><ns>14</ns><id>12</id><revision><id>12</id><timestamp>2026-10-24T20:51:11Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>12</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Research notes with documented methods, sources, versions, and confidence levels.
+</text><sha1>bth6l98apxjzoir9mow0wjakm89g6kl</sha1></revision></page><page><title>Category:Modding projects</title><ns>14</ns><id>13</id><revision><id>13</id><timestamp>2026-10-24T20:51:12Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>13</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">Community projects related to New Super Mario Bros. U Deluxe modding.
+</text><sha1>bva0qarntvif2u05yk2q6zgbqjzdle9</sha1></revision></page><page><title>Template:Resource infobox</title><ns>10</ns><id>14</id><revision><id>14</id><timestamp>2026-10-24T20:51:13Z</timestamp><contributor><username>Steammaker212</username></contributor><comment>Import initial wiki source bundle</comment><origin>14</origin><model>wikitext</model><format>text/x-wiki</format><text xml:space="preserve">&lt;div class="nsmbudx-toolbox"&gt;
+&lt;div class="nsmbudx-toolbox-heading"&gt;{{{name|Resource}}}&lt;/div&gt;
+&lt;div class="nsmbudx-toolbox-type"&gt;{{{type|Community resource}}}&lt;/div&gt;
+&lt;p&gt;{{{summary|See the page overview below.}}}&lt;/p&gt;
+&lt;div class="nsmbudx-toolbox-link"&gt;[{{{repository|https://www.mediawiki.org/}}} Open source or project page]&lt;/div&gt;
+&lt;/div&gt;
+&lt;noinclude&gt;
+Use this template near the top of a tool or project page.
+
+&lt;pre&gt;&lt;nowiki&gt;
+{{Resource infobox
+|name=Resource name
+|type=Tool or project
+|summary=Short, sourced description.
+|repository=https://example.org/project
+}}
+&lt;/nowiki&gt;&lt;/pre&gt;
+&lt;/noinclude&gt;
+</text><sha1>d9ora4wt1cfrn9hbxjvr3ihuwgx80de</sha1></revision></page></mediawiki>

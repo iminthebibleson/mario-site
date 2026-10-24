@@ -3,11 +3,10 @@ import Link from "next/link";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import Switch from "./components/Switch";
-import { discordInviteUrl, modDownloadUrl, modVersion } from "./site-links";
+import { discordInviteUrl, modDownloadUrl, modVersion, wikiUrl } from "./site-links";
 
 const levelEditorRepository = "https://github.com/Steammaker212/Yaz0moto";
 const compilerRepository = "https://github.com/jabonchan/sweet-dx";
-const mirahezeRequest = "https://meta.miraheze.org/wiki/Special:RequestWiki";
 
 function ExternalArrow() {
   return <span aria-hidden="true" className="arrow-mark">↗</span>;
@@ -313,14 +312,14 @@ export default function Home() {
             </svg>
           </div>
           <div className="wiki-copy">
-            <p className="section-kicker">04 — KNOWLEDGE BASE</p>
-            <h2 id="wiki-title">A community wiki<br />is taking shape.</h2>
+            <p className="section-kicker">04 — THE COMMUNITY WIKI</p>
+            <h2 id="wiki-title">The wiki is live.<br />Build knowledge together.</h2>
             <p>
-              We&apos;re preparing a Miraheze wiki to keep tool documentation, tutorials, project history, and
-              carefully sourced game research in one searchable home.
+              Browse community guides for Yaz0moto and SweetDX, get started with modding, and explore project
+              history and game research—all in one searchable home.
             </p>
-            <a className="inline-link" href={mirahezeRequest} target="_blank" rel="noreferrer">
-              Open Miraheze&apos;s wiki request page <ExternalArrow />
+            <a className="button button-red" href={wikiUrl} target="_blank" rel="noreferrer">
+              Visit the NSMBU Deluxe wiki <ExternalArrow />
             </a>
           </div>
           <div className="wiki-topics">

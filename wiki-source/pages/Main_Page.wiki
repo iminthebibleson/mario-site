@@ -1,0 +1,47 @@
+<div class="nsmbudx-hero">
+<div class="nsmbudx-hero-brand">
+[[File:SteamLogo.png|frameless|52px|link=Main Page|alt=Steam's logo]]
+<div>
+<div class="nsmbudx-kicker">COMMUNITY KNOWLEDGE BASE</div>
+<div class="nsmbudx-lead">'''Make room for what's next.'''</div>
+</div>
+</div>
+This is a community-maintained guide to modding ''New Super Mario Bros. U Deluxe'', its creator tools, and Steam's ''New Super Mario Bros. Deluxe'' project.
+</div>
+
+<div class="nsmbudx-card-grid">
+<div class="nsmbudx-card">
+<div class="nsmbudx-card-label">START HERE</div>
+'''[[Getting Started with Modding|Getting started]]'''<br />Find an orientation to the tools, project resources, and responsible modding practices.
+</div>
+<div class="nsmbudx-card">
+<div class="nsmbudx-card-label">CREATION TOOLS</div>
+'''[[Yaz0moto|Yaz0moto]]''' · '''[[SweetDX|SweetDX]]'''<br />Explore the community level editor and custom-code compiler through their upstream documentation.
+</div>
+<div class="nsmbudx-card">
+<div class="nsmbudx-card-label">PROJECT</div>
+'''[[Steam's New Super Mario Bros. Deluxe|The flagship mod]]'''<br />Read about the project, its release notes, and where to find its official updates.
+</div>
+<div class="nsmbudx-card">
+<div class="nsmbudx-card-label">LEARN TOGETHER</div>
+'''[[Level Design|Level design]]''' · '''[[Game Research|Game research]]'''<br />Share sourced observations and creator knowledge with the community.
+</div>
+</div>
+
+== Featured project ==
+
+<div class="nsmbudx-feature">
+<div class="nsmbudx-feature-copy">
+<div class="nsmbudx-feature-badges"><span class="nsmbudx-feature-badge">Flagship project</span><span class="nsmbudx-feature-badge">In active development</span></div>
+<div class="nsmbudx-feature-title">[[Steam's New Super Mario Bros. Deluxe|Steam's New Super Mario Bros. Deluxe]]</div>
+<p>A community mod project exploring original ideas for ''New Super Mario Bros. U Deluxe''. Follow development as the team builds new content, tests ideas, and expands what creators can do with the game.</p>
+<div class="nsmbudx-feature-links">[https://www.mediafire.com/file/xj7gg9jjtguc4a2/Steam_New_Super_Mario_Bro_U_DX_Mod_5_Levels.zip/file Get vBeta0.50a ↗] [https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642 Project updates ↗] [https://discord.gg/YVtNsKzYTg Join the community ↗]</div>
+</div>
+<div class="nsmbudx-feature-art">[[File:SteamProjectBanner.png|frameless|alt=Steam's New Super Mario Bros. Deluxe project logo|link=Steam's New Super Mario Bros. Deluxe]]<div class="nsmbudx-feature-release">vBeta0.50a · 5 levels</div></div>
+</div>
+
+== About this wiki ==
+
+This is an unofficial, fan-maintained resource. It is not affiliated with Nintendo. The wiki documents community-created tools and research; it does not host the base game or Nintendo-owned game files. See [[Community Guidelines]] before contributing.
+
+[[Category:Community resources]]

@@ -1,0 +1,29 @@
+Thanks for helping build a useful, accurate resource for the New Super Mario Bros. U Deluxe modding community.
+
+== Before editing ==
+
+* Check whether the topic already has a page.
+* Use the tool's upstream repository for current requirements and setup details.
+* Keep general modding information separate from claims about Steam's ''New Super Mario Bros. Deluxe'' project.
+* Do not publish private messages, personal information, or material you do not have permission to share.
+
+== Writing standards ==
+
+* State facts plainly and link to a source for technical claims.
+* Include relevant game, tool, and emulator versions.
+* Mark uncertain findings as under investigation or speculative.
+* Prefer short, task-focused sections and descriptive page titles.
+* Use headings in order and write useful alt text for images.
+* Explain when a page was last checked if its instructions can become outdated.
+
+== Images and files ==
+
+Upload only original work or files you have permission to publish. Do not upload the base game, extracted game assets, executables, or other Nintendo-owned files. Attribute creators according to their stated preferences.
+
+== Talk pages and corrections ==
+
+Use a page's talk page to discuss substantial changes or unclear claims. When correcting outdated information, link the new source and note the affected versions.
+
+See [[Community Guidelines]] for the wiki's scope and sharing rules.
+
+[[Category:Community resources]]

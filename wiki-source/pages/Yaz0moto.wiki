@@ -1,0 +1,24 @@
+{{Resource infobox
+|name=Yaz0moto
+|type=Level editor
+|summary=A level editor for building and shaping custom New Super Mario Bros. U Deluxe stages.
+|repository=https://github.com/Steammaker212/Yaz0moto
+}}
+
+Yaz0moto is a community level editor associated with Steam's ''New Super Mario Bros. Deluxe'' modding project. The project website describes it as a tool for building and shaping custom stages.
+
+== What it is used for ==
+
+The project presents Yaz0moto as a way to explore level layouts and develop original course ideas. For supported features, requirements, setup, and current compatibility, consult the [https://github.com/Steammaker212/Yaz0moto upstream repository] and its documentation.
+
+== Getting help ==
+
+Use the repository's issue tracker and documentation for tool-specific help. If you add community tips to this page, include the tool version, the game version, steps to reproduce, and a source where possible.
+
+== Related pages ==
+
+* [[Getting Started with Modding]]
+* [[Level Design]]
+* [[Steam's New Super Mario Bros. Deluxe]]
+
+[[Category:Tools]]

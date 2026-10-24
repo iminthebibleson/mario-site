@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NSMBU Deluxe Modding Wiki · Local Preview</title>
+    <link rel="stylesheet" href="styles/Common.css" />
+    <style>
+      @font-face {
+        font-family: "Mario";
+        src: url("preview-assets/SuperMario.ttf") format("truetype");
+        font-style: normal;
+        font-display: swap;
+      }
+      :root {
+        color-scheme: dark;
+        --paper: #17161a;
+        --paper-deep: #232228;
+        --ink: #f1eee9;
+        --muted: #c0bcb7;
+        --green: #202b2c;
+        --red: #c94a43;
+        --yellow: #d6b86d;
+        --line: rgba(242, 238, 232, .14);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+      * { box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(ellipse at 12% 0, rgba(126, 37, 46, .36), transparent 42rem),
+          radial-gradient(ellipse at 100% 58%, rgba(126, 37, 46, .14), transparent 40rem),
+          var(--paper);
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      a { color: var(--yellow); text-decoration-color: rgba(214, 184, 109, .5); text-underline-offset: 3px; }
+      a:hover { color: #f1d98e; }
+      .wiki-topbar {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        max-width: 1260px;
+        min-height: 76px;
+        margin: 18px auto 0;
+        padding: 0 24px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(23, 22, 26, .84);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .18);
+        backdrop-filter: blur(14px);
+      }
+      .wiki-emblem { display: block; width: 48px; height: 48px; object-fit: contain; filter: drop-shadow(0 4px 14px rgba(214, 184, 109, .2)); }
+      .wiki-brand { font-size: 14px; font-weight: 800; letter-spacing: -.02em; }
+      .wiki-brand small { display: block; margin-top: 2px; color: var(--red); font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+      .wiki-top-link { margin-left: auto; padding: 10px 14px; border-radius: 9px; background: var(--green); color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+      .wiki-top-link:hover { background: #2b3c3e; color: var(--ink); }
+      .wiki-shell { display: grid; grid-template-columns: 190px minmax(0, 920px); gap: 40px; max-width: 1260px; margin: 34px auto 70px; padding: 0 24px; align-items: start; }
+      .wiki-sidebar { position: sticky; top: 18px; padding: 14px 0; color: var(--muted); font-size: 13px; }
+      .wiki-sidebar strong { display: block; margin: 0 0 11px 9px; color: var(--red); font-family: "Mario", "Arial Black", Arial, sans-serif; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+      .wiki-sidebar a { display: block; margin: 2px 0; padding: 8px 10px; border: 1px solid transparent; border-radius: 8px; color: var(--muted); text-decoration: none; }
+      .wiki-sidebar a:hover { border-color: var(--line); background: rgba(255, 255, 255, .045); color: var(--ink); }
+      .wiki-article { min-width: 0; padding: 28px 34px 38px; border: 1px solid var(--line); border-radius: 16px; background: rgba(29, 28, 34, .86); box-shadow: 0 24px 70px rgba(0, 0, 0, .22); }
+      .preview-note { margin: 0 0 24px; padding: 9px 12px; border: 1px solid rgba(214, 184, 109, .2); border-left: 3px solid var(--yellow); border-radius: 0 8px 8px 0; background: rgba(214, 184, 109, .055); color: #c7c0b4; font-size: 12px; }
+      .wiki-article h1 { margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--line); color: var(--ink); font-family: "Mario", "Arial Black", Arial, sans-serif; font-size: clamp(30px, 4vw, 40px); font-weight: 900; letter-spacing: -.045em; line-height: 1.1; }
+      .wiki-article h2 { margin: 1.6em 0 .65em; padding-bottom: 7px; border-bottom: 1px solid var(--line); color: var(--ink); font-family: "Mario", "Arial Black", Arial, sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -.035em; line-height: 1.2; }
+      .wiki-article p, .wiki-article li { color: #d0ccc5; line-height: 1.7; }
+      .wiki-article ul { padding-left: 1.6em; }
+      .wiki-card-demo { margin: 22px 0; }
+      .wiki-card-demo .nsmbudx-card { min-height: 145px; background: radial-gradient(ellipse at 100% 0, rgba(120, 185, 197, .09), transparent 40%), #25242a; }
+      .nsmbudx-hero { background: radial-gradient(ellipse at 100% 0, rgba(120, 185, 197, .12), transparent 38%), linear-gradient(135deg, #202b2c, #25242a); }
+      .nsmbudx-card { border-color: var(--line); }
+      .nsmbudx-toolbox { box-shadow: 0 14px 34px rgba(0, 0, 0, .18); }
+      .nsmbudx-feature {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1.12fr) minmax(240px, .88fr);
+        align-items: center;
+        gap: 28px;
+        overflow: hidden;
+        margin: 20px 0 0;
+        padding: clamp(22px, 4vw, 40px);
+        border: 1px solid rgba(120, 185, 197, .17);
+        border-radius: 18px;
+        background: radial-gradient(ellipse at 85% 50%, rgba(112, 149, 93, .2), transparent 37%), linear-gradient(120deg, #202b2c, #1d2426 72%);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, .24);
+      }
+      .nsmbudx-feature::after { position: absolute; inset: auto 8% 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(214, 184, 109, .38), transparent); content: ""; }
+      .nsmbudx-feature-copy, .nsmbudx-feature-art { position: relative; z-index: 1; }
+      .nsmbudx-feature-title { max-width: 13ch; margin: 14px 0 12px; color: #fffaf0; font-family: "Mario", "Arial Black", Arial, sans-serif; font-size: clamp(28px, 4vw, 42px); font-weight: 900; letter-spacing: -.045em; line-height: 1.02; }
+      .nsmbudx-feature-title a { color: inherit; text-decoration: none; }
+      .nsmbudx-feature-title a:hover { color: var(--yellow); }
+      .nsmbudx-feature-copy p { max-width: 58ch; }
+      .nsmbudx-feature-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+      .nsmbudx-feature-badge { padding: 5px 9px; border: 1px solid rgba(242, 238, 232, .24); border-radius: 5px; color: #e6dfcf; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .nsmbudx-feature-badge:first-child { border-color: transparent; background: var(--yellow); color: #28251e; }
+      .nsmbudx-feature-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+      .nsmbudx-feature-links a { padding: 9px 12px; border: 1px solid rgba(214, 184, 109, .26); border-radius: 8px; background: rgba(214, 184, 109, .08); color: var(--yellow); font-size: 12px; font-weight: 800; text-decoration: none; }
+      .nsmbudx-feature-links a:hover { background: rgba(214, 184, 109, .16); }
+      .nsmbudx-feature-art { display: grid; justify-items: center; gap: 12px; min-width: 0; }
+      .nsmbudx-feature-art img { display: block; width: 100%; max-width: 410px; height: auto; filter: drop-shadow(0 18px 25px rgba(0, 0, 0, .35)); }
+      .nsmbudx-feature-release { color: #b6c7bb; font-family: "Mario", "Arial Black", Arial, sans-serif; font-size: 11px; letter-spacing: .06em; text-align: center; }
+      .preview-tool-page { margin-top: 46px; padding-top: 28px; border-top: 3px solid transparent; border-image: linear-gradient(90deg, var(--red), var(--yellow)) 1; }
+      .preview-tool-page::after { display: block; clear: both; content: ""; }
+      .preview-tool-page h2 { margin-top: 1.5em; }
+      .preview-categories { clear: both; margin-top: 30px; padding-top: 13px; border-top: 1px solid var(--line); color: #9a9691; font-size: 12px; }
+      @media (max-width: 760px) {
+        .wiki-topbar { margin: 10px 12px 0; padding: 0 16px; }
+        .wiki-shell { grid-template-columns: 1fr; gap: 14px; margin-top: 18px; padding: 0 12px; }
+        .wiki-sidebar { position: static; display: flex; flex-wrap: wrap; gap: 2px; padding: 0; }
+        .wiki-sidebar strong { width: 100%; margin: 0 0 4px 9px; }
+        .wiki-sidebar a { padding: 7px 9px; }
+        .wiki-article { padding: 22px 18px 28px; }
+        .wiki-top-link { display: none; }
+        .nsmbudx-feature { grid-template-columns: 1fr; gap: 20px; }
+        .nsmbudx-feature-art { grid-row: 1; }
+        .nsmbudx-feature-art img { max-width: 360px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="wiki-topbar">
+      <img class="wiki-emblem" src="assets/SteamLogo.png" alt="Steam's logo" />
+      <div class="wiki-brand">NSMBU Deluxe Modding Wiki<small>LOCAL VISUAL PREVIEW</small></div>
+      <a class="wiki-top-link" href="#tool-page">Tool page example ↓</a>
+    </header>
+
+    <div class="wiki-shell">
+      <nav class="wiki-sidebar" aria-label="Preview navigation">
+        <strong>Navigation</strong>
+        <a href="#main-page">Main Page</a>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#tool-page">Yaz0moto</a>
+        <a href="#community">Community &amp; research</a>
+      </nav>
+
+      <main class="wiki-article">
+        <p class="preview-note">Static preview of the draft content and shared CSS. Spacing and colors are representative; the live Miraheze skin may render differently.</p>
+
+        <section id="main-page">
+          <h1>Main Page</h1>
+          <div class="nsmbudx-hero">
+            <div class="nsmbudx-kicker">COMMUNITY KNOWLEDGE BASE</div>
+            <div class="nsmbudx-lead">Make room for what's next.</div>
+            This is a community-maintained guide to modding <i>New Super Mario Bros. U Deluxe</i>, its creator tools, and Steam's <i>New Super Mario Bros. Deluxe</i> project.
+          </div>
+
+          <div class="nsmbudx-card-grid wiki-card-demo">
+            <div class="nsmbudx-card"><div class="nsmbudx-card-label">START HERE</div><b><a href="#getting-started">Getting started</a></b><br />Find an orientation to the tools, project resources, and responsible modding practices.</div>
+            <div class="nsmbudx-card"><div class="nsmbudx-card-label">CREATION TOOLS</div><b><a href="#tool-page">Yaz0moto</a></b> · <b>SweetDX</b><br />Explore community tools through their upstream documentation.</div>
+            <div class="nsmbudx-card"><div class="nsmbudx-card-label">PROJECT</div><b>Steam's New Super Mario Bros. Deluxe</b><br />Read about the project, release notes, and official updates.</div>
+            <div class="nsmbudx-card"><div class="nsmbudx-card-label">LEARN TOGETHER</div><b>Level design</b> · <b>Game research</b><br />Share sourced observations and creator knowledge.</div>
+          </div>
+
+          <h2>Featured project</h2>
+          <div class="nsmbudx-feature">
+            <div class="nsmbudx-feature-copy">
+              <div class="nsmbudx-feature-badges"><span class="nsmbudx-feature-badge">Flagship project</span><span class="nsmbudx-feature-badge">In active development</span></div>
+              <div class="nsmbudx-feature-title"><a href="#main-page">Steam's New Super Mario Bros. Deluxe</a></div>
+              <p>A community mod project exploring original ideas for <i>New Super Mario Bros. U Deluxe</i>. Follow development as the team builds new content, tests ideas, and expands what creators can do with the game.</p>
+              <div class="nsmbudx-feature-links"><a href="https://www.mediafire.com/file/xj7gg9jjtguc4a2/Steam_New_Super_Mario_Bro_U_DX_Mod_5_Levels.zip/file">Get vBeta0.50a ↗</a><a href="https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642">Project updates ↗</a><a href="https://discord.gg/YVtNsKzYTg">Join the community ↗</a></div>
+            </div>
+            <div class="nsmbudx-feature-art"><img src="assets/SteamProjectBanner.png" alt="Steam's New Super Mario Bros. Deluxe project logo" /><span class="nsmbudx-feature-release">vBeta0.50a · 5 levels</span></div>
+          </div>
+          <div id="community" class="preview-categories">Categories: Community resources</div>
+        </section>
+
+        <section class="preview-tool-page" id="tool-page">
+          <h1>Yaz0moto</h1>
+          <aside class="nsmbudx-toolbox">
+            <div class="nsmbudx-toolbox-heading">Yaz0moto</div>
+            <div class="nsmbudx-toolbox-type">Level editor</div>
+            <p>A level editor for building and shaping custom New Super Mario Bros. U Deluxe stages.</p>
+            <div class="nsmbudx-toolbox-link"><a href="https://github.com/Steammaker212/Yaz0moto">Open upstream source</a></div>
+          </aside>
+          <p>Yaz0moto is a community level editor associated with Steam's <i>New Super Mario Bros. Deluxe</i> modding project. The project website describes it as a tool for building and shaping custom stages.</p>
+          <h2>What it is used for</h2>
+          <p>The project presents Yaz0moto as a way to explore level layouts and develop original course ideas. For supported features, requirements, setup, and current compatibility, consult the upstream repository and its documentation.</p>
+          <h2>Getting help</h2>
+          <p>Use the repository's issue tracker and documentation for tool-specific help. When sharing a tip, include the tool version, game version, reproduction steps, and a source where possible.</p>
+          <div class="preview-categories">Categories: Tools</div>
+        </section>
+
+        <section id="getting-started" class="preview-categories">The remaining pages—Getting Started, SweetDX, Level Design, Game Research, Contributing, and Community Guidelines—use the same article structure and styles.</section>
+      </main>
+    </div>
+  </body>
+</html>

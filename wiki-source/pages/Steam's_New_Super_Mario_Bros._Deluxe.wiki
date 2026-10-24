@@ -1,0 +1,31 @@
+'''Steam's New Super Mario Bros. Deluxe''' is a community mod project for ''New Super Mario Bros. U Deluxe''. The project website describes ongoing work on new content, testing, and creator resources.
+
+{{Resource infobox
+|name=Steam's New Super Mario Bros. Deluxe
+|type=Community mod project
+|summary=An independent fan project for New Super Mario Bros. U Deluxe.
+|repository=https://github.com/iminthebibleson/mario-site
+}}
+
+== Current project links ==
+
+* [https://www.mediafire.com/file/xj7gg9jjtguc4a2/Steam_New_Super_Mario_Bro_U_DX_Mod_5_Levels.zip/file Download listed on the project website]
+* [https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642 Project update post]
+* [https://discord.gg/YVtNsKzYTg Community Discord]
+* [https://github.com/iminthebibleson/mario-site Website source repository]
+
+== Release information ==
+
+At the time this wiki source was prepared, the project website listed '''vBeta0.50a''' with '''five levels'''. Confirm the current build, included content, and installation notes on the project website before publishing or relying on this information.
+
+The download is a mod patch, not the base game. Use your own legally obtained game copy and follow the current installation instructions provided with the project release.
+
+== Tools and community resources ==
+
+The project highlights [[Yaz0moto]] for level editing and [[SweetDX]] for custom-code compilation. See those pages for upstream links; their maintainers' documentation is the source of truth for requirements and setup.
+
+== Scope and affiliation ==
+
+This is an independent fan project and is not affiliated with Nintendo. Names and trademarks for the game and its characters belong to their respective owners. This wiki does not distribute the base game or Nintendo-owned game files.
+
+[[Category:Modding projects]]

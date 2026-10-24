@@ -1,0 +1,26 @@
+This wiki is a public, community-maintained reference for modding ''New Super Mario Bros. U Deluxe'', its creator tools, community research, and the Steam's ''New Super Mario Bros. Deluxe'' project.
+
+== Scope ==
+
+Keep project-specific information clearly identified. Link to the maintainers' documentation rather than copying tool releases or unverified setup instructions. Document research with enough detail for others to understand its source and limitations.
+
+== Respect rights and privacy ==
+
+* Do not upload or link to unauthorized copies of the base game, game dumps, executables, or extracted Nintendo-owned files.
+* Share only original work or material you have permission to publish.
+* Attribute creator-submitted work as requested by its creator.
+* Do not publish personal information or private conversations without consent.
+* Do not present this wiki or the featured project as affiliated with or endorsed by Nintendo.
+
+== Accuracy and conduct ==
+
+* Cite sources for technical claims and include relevant version details.
+* Clearly label hypotheses, incomplete tests, and community reports.
+* Correct mistakes constructively and discuss disputed changes on talk pages.
+* Keep discussions focused on the subject and treat contributors respectfully.
+
+== Fan-project notice ==
+
+This is an unofficial fan resource. ''New Super Mario Bros. U Deluxe'' and related characters, names, and assets belong to their respective owners. The wiki does not host the base game; readers are responsible for using their own legally obtained game copy where applicable.
+
+[[Category:Community resources]]

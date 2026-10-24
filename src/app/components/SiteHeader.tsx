@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { wikiUrl } from "../site-links";
 
 export default function SiteHeader() {
   return (
@@ -17,7 +18,7 @@ export default function SiteHeader() {
         <Link href="/#tools">Tools</Link>
         <Link href="/#resources">Resources</Link>
         <Link href="/downloads/">Downloads</Link>
-        <Link href="/#wiki">Wiki</Link>
+        <a href={wikiUrl} target="_blank" rel="noreferrer">Wiki</a>
       </nav>
 
       <Link className="button button-dark header-button" href="/downloads/">

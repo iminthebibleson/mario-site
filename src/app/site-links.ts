@@ -3,4 +3,5 @@ export const modDownloadUrl =
 export const discordInviteUrl = "https://discord.gg/YVtNsKzYTg";
 export const discordPostUrl =
   "https://discord.com/channels/1513729113553375312/1516158203849740288/1516161888205934642";
+export const wikiUrl = "https://nsmbudxmodding.miraheze.org/wiki/Main_Page";
 export const modVersion = "vBeta0.50a";

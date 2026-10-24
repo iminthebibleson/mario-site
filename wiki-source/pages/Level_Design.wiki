@@ -1,0 +1,21 @@
+Level-design notes on this wiki should help creators explain how a course works and how an idea can be tested or improved. Keep examples original or obtain permission from their creators before publishing them.
+
+== A useful level note ==
+
+When describing a course or design technique, include:
+
+* The intended player experience or central idea.
+* How the route introduces, develops, and concludes that idea.
+* Any assumptions about game version, editor, or custom assets.
+* A screenshot or diagram only when you have permission to share every included asset.
+* The creator's name and the requested attribution, if the creator has agreed to publication.
+
+== Creating custom stages ==
+
+The community project lists [[Yaz0moto]] as a level editor for building and shaping custom stages. Check its [https://github.com/Steammaker212/Yaz0moto repository] for current capabilities and instructions. This page does not claim support for features that are not documented by the tool's maintainers.
+
+== Sharing examples ==
+
+Before uploading an example, confirm that it contains no game files, unlicensed game assets, private information, or material copied from another creator without permission. Explain what the example demonstrates and how it was made.
+
+[[Category:Community resources]]
